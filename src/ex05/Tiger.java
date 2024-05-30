@@ -1,4 +1,4 @@
-package ex04;
+package ex05;
 
 public class Tiger extends Animal {
     private String name = "호랑이";
