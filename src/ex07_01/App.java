@@ -1,8 +1,7 @@
-package ex07;
+package ex07_01;
 
-import ex07.lib.DB;
-import ex07.lib.MariaDB;
-import ex07.lib.OracleDB;
+import ex07_01.lib.DB;
+import ex07_01.lib.Driver;
 
 public class App {
     public static void main(String[] args) {
@@ -15,7 +14,7 @@ public class App {
 //        oracleDB.setUrl("jdbc:oracle:thin://127.0.0.1:8080");
 //        oracleDB.execute("select");
         DBFactory factory = DBFactory.getInstance();
-        DB oracleDB = factory.createDB("maria");
+        DB oracleDB = factory.createDB(Driver.MARIA);
         oracleDB.execute("select");
     }
 }
